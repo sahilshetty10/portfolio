@@ -24,6 +24,17 @@ const Project = ({
   gsap.registerPlugin(useGSAP);
   gsap.registerPlugin(ScrollTrigger);
   useGSAP(() => {
+    gsap.from(containerRef.current, {
+      scrollTrigger: {
+        trigger: containerRef.current,
+        start: "top 50%",
+        end: "bottom 70%",
+        toggleActions: "play reverse play reverse",
+      },
+      duration: 1,
+      scale: 0.95,
+      ease: "power4.out",
+    });
     ScrollTrigger.create({
       trigger: containerRef.current,
       start: "top 20%",

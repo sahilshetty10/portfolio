@@ -4,6 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import { useRef } from "react";
 import Projects from "./components/layout/Projects.tsx";
+import About from "./components/layout/About.tsx";
 
 const App = () => {
   gsap.registerPlugin(useGSAP);
@@ -32,6 +33,7 @@ const App = () => {
       >
         <Services />
         <Projects />
+        <About />
       </div>
       <div className="h-screen"></div>
     </>
