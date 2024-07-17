@@ -15,7 +15,9 @@ const Projects = () => {
         description="Featured client projects that have been meticulously crafted with passion and purpose over the years."
       />
       <div className="grid gap-8 md:grid-cols-12">
-        <div className="counter light-cream sticky top-60 col-span-5 hidden h-min justify-center text-[15rem] md:flex">
+        <div className="counter light-cream sticky top-60 col-span-5 hidden h-min justify-start text-[8rem] md:flex">
+          PROJECT
+          <br />
           {counter}
         </div>
         <span className="md:col-span-1"></span>

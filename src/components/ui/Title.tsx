@@ -3,7 +3,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 
-const Title = ({ title }: { title: string }) => {
+const Title = ({ title, dark }: { title: string; dark?: boolean }) => {
   const containerRef = React.useRef<HTMLDivElement>(null);
   let characters = title.split("");
   gsap.registerPlugin(useGSAP);
@@ -24,7 +24,10 @@ const Title = ({ title }: { title: string }) => {
     { scope: containerRef },
   );
   return (
-    <h2 className="title light-cream" ref={containerRef}>
+    <h2
+      className={`title ${dark ? "text-[var(--color-bg-black)]" : "light-cream"}`}
+      ref={containerRef}
+    >
       {characters.map((character, index) => {
         return (
           <span key={index} className="title-text inline-block">
