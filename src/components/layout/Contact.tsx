@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import Title from "../ui/Title";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
