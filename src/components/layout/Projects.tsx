@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Title from "../ui/Title";
 import SectionDescription from "../ui/SectionDescription";
 import Project from "../ui/Project";
